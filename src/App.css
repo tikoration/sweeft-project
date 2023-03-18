@@ -89,16 +89,26 @@ fieldset{
 
 .userAndFriends{
   border: 1px solid grey;
-  /* position: absolute; */
   margin: auto;
   padding: 6px;
   max-width: 75rem;
 }
 
 .info-fieldset{
-  width: 600px;
+  min-width: 600px;
 }
 
 .bread-crumbs{
  display: flex;
+}
+
+@media(max-width: 62.5rem)
+{
+  .user-component { 
+    flex-direction: column;
+    width: 100%;
+    }
+    fieldset{
+      width: 100%;
+    }
 }
